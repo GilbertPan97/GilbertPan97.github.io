@@ -1,0 +1,136 @@
+
+<!-- saved from url=(0029)https://residualrl.github.io/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="./Residual Reinforcement Learning_files/style.css" type="text/css" media="all">
+
+<title>Residual Reinforcement Learning</title>
+<style type="text/css">
+#primarycontent h1 {
+  font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+  text-align: center;
+}
+#primarycontent p {
+  text-align: center;
+}
+#primarycontent {
+  text-align: justify;
+}
+#primarycontent p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#primarycontent p iframe {
+  text-align: center;
+}
+.featart {
+  margin:4px;
+}
+.hoverdiv {
+  background-color:black;
+  margin-top:2px;
+  margin-bottom:10px;
+  width:100%;
+}
+.hoverdiv:hover {
+  background-color:white;
+}
+</style>
+
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+<script type="text/javascript" src="./Residual Reinforcement Learning_files/LaTeXMathML.js">
+</script>
+<!--
+<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css" />
+-->
+
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93210824-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+<div id="primarycontent">
+<h1 align="center" itemprop="name"><strong>RobMach: G-Code based off-line programming for robotic machining trajectory generation</strong></h1>
+
+<center>
+<ul id="people" itemprop="accountablePerson">
+  <li><h4>
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=0ZlZ9vwAAAAJ">Jiabin Pan*</a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=rdyz9EMAAAAJ"> Zhongtao Fu*</a>,
+        <a > Jiahao Xiong</a>,
+        <a > Xiaoyu Lei</a>,
+        <a > Ka Zhang</a>,
+        <a > Xubing Chen</a>,
+   </h4></li>
+  <li>*Equal Contribution</li>
+</ul>
+</center>
+
+<h3 style="clear:both">Abstract</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+Compared with multi-axis CNC machines, industrial robots provide a new solution to complex surface machining due to the significant advantages of cost-effectiveness, good flexibility and large workspace. However, the programming for robotic machining trajectory is complex and time-consuming, due to the limitations for robots to execute G-Code command generated via the CAD/CAM post-processing techniques. To this end, the paper proposed an effective methodology to generate the robotic machining trajectory by the conversion from G-Code commands for practical operations, in which the robotic machining system and the associated kinematic analysis are implemented using ABB IRB 2600 robot, as well as the interpretation of G-Code and robot control commands. The conversion relationship from G-Code to robot control commands is achieved with the information of the CL point parameters and machining configuration parameters. One off-line programming software, RobMach, is developed to simulate and validate the effectiveness of the robotic machining trajectory by loading G-Code file of one blade milling, and the generated robot control program can be directly sent to robot’s controller for achieving the robotic machining capabilities, which can be extended to the machining operations of different industrial robots.
+</p>
+
+<h3 style="clear:both">Preprint</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+  Preprint can be found <a href="https://arxiv.org/abs/1812.03201">here</a>.
+</p>
+
+<h3 style="clear:both">Simulation Video</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+  Demonstration video of RobMach software operation:
+</p>
+<p style="padding-left: 10px; padding-right: 10px;">
+  </p><center>
+    <iframe width="789" height="493" src="https://www.youtube.com/embed/qcXZK36bDbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+<p></p>
+
+<p style="padding-left: 10px; padding-right: 10px;">
+  Offline programming files are tested in RobotStudio, the demo video is showen as follow:
+</p>
+<p style="padding-left: 10px; padding-right: 10px;">
+  </p><center>
+    <iframe width="789" height="493" src="https://www.youtube.com/embed/4LsVo9rtGBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+<p></p>
+
+
+<!-- <h3 style="clear:both">Website Template</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+The template for this website has been adopted from Carl Doersch.
+</p> -->
+
+<!-- <h3 style="clear:both">Contact</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+For comments/questions, contact <a href="ashvin.me">Ashvin Nair</a></p>
+</div> -->
+
+
+
+</div></body></html>
