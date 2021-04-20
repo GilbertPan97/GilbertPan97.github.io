@@ -120,7 +120,7 @@
   <!-- $ \int _a ^b f^{\prime}(x)\, dx = f(b) - f(a) $ -->
   <!-- $ \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} $ -->
   <!-- $\alpha_z=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot I_z(x)}}dx=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot [w \cdot h^3(x)/12]}}dx$ -->
-  $y(x)=\begin{cases} \sqrt{b^2-\frac{b^2}{a^2}(x-a)^2}-b-\frac{t}{2}  &(0 < x < a) \\ -t/2  &(a \le x < a+l) \\ \sqrt{b^2-\frac{b^2}{a^2}(x-a-l)^2}-b-\frac{t}{2}  &(a+l \le x < 2a+l) \end{cases} $
+  $ \begin{align*} y(x)=\begin{cases} \sqrt{b^2-\frac{b^2}{a^2}(x-a)^2}-b-\frac{t}{2}  &(0 < x < a) \\ -t/2  &(a \le x < a+l) \\ \sqrt{b^2-\frac{b^2}{a^2}(x-a-l)^2}-b-\frac{t}{2}  &(a+l \le x < 2a+l) \end{cases} \end{align*}$
 </p>
 <!-- <img src="https://latex.codecogs.com/svg.image?y(x)=\begin{cases}\sqrt{b^2-\frac{b^2}{a^2}(x-a)^2}-b-\frac{t}{2}&space;&space;&(0<x<a)\\-t/2&space;&space;&(a&space;\le&space;x<a&plus;l)\\\sqrt{b^2-\frac{b^2}{a^2}(x-a-l)^2}-b-\frac{t}{2}&space;&space;&(a&plus;l&space;\le&space;x<2a&plus;l)\end{cases}" title="y(x)=\begin{cases}\sqrt{b^2-\frac{b^2}{a^2}(x-a)^2}-b-\frac{t}{2} &(0<x<a)\\-t/2 &(a \le x<a+l)\\\sqrt{b^2-\frac{b^2}{a^2}(x-a-l)^2}-b-\frac{t}{2} &(a+l \le x<2a+l)\end{cases}" /> -->
 
@@ -128,7 +128,7 @@
   In order to simplify the integral calculation of flexibility, the independent variables of ellipse formula can be parameterized, then the contour equation can be converted as:
 </p>
 <p>
-  $y(\theta)=\begin{cases} b\cos\theta-b-\frac{t}{2}  &(x=a\sin\theta+a,-\frac{\pi}{2}<\theta < 0) \\ -t/2  &(a \le x < a+l) \\ b\cos\theta-b-\frac{t}{2}  &(x=a\sin\theta+a+l,0 \le \theta < \frac{\pi}{2}) \end{cases}$
+  $ \begin{align*} y(\theta)=\begin{cases} b\cos\theta-b-\frac{t}{2}  &(x=a\sin\theta+a,-\frac{\pi}{2}<\theta < 0) \\ -t/2  &(a \le x < a+l) \\ b\cos\theta-b-\frac{t}{2}  &(x=a\sin\theta+a+l,0 \le \theta < \frac{\pi}{2}) \end{cases} \end{align*}$
 </p>
 
 <h3 style="clear:both">Compliance equation of RFH</h3>
@@ -136,37 +136,37 @@
   The deformation of the compliant mechanism in one direction is usually determined by multiple forces and moments, which can be calculated by the deflection guide by the Castigliano theorem. The strain energy of the material under the mixed force is composed of bending, shearing, axial strain and torsion, its total strain energy expression is as follows:
 </p>
 <p>
-  $ U=U_{bending}+U_{shearing}+U_{axial}+U_{torsion} $
+  $\begin{align*} U=U_{bending}+U_{shearing}+U_{axial}+U_{torsion} \end{align*}$
 </p>
 <p>
   with
 </p>
 <p>
-  $ U_{bending}=U_{bending,\space y}+U_{bending, \space z}=\int_L{\frac{M_y'^2}{2EI_y}}dx+\int_L{\frac{M_z'^2}{2EI_z}}dx $
+  $\begin{align*} U_{bending}=U_{bending,\space y}+U_{bending, \space z}=\int_L{\frac{M_y'^2}{2EI_y}}dx+\int_L{\frac{M_z'^2}{2EI_z}}dx \end{align*}$
 </p>
 <p>
-  $ U_{shearing}=U_{shearing,\space y}+U_{shearing, \space z}=\int_L{\frac{k F_y'^2}{2GA}}dx+\int_L{\frac{k F_z'^2}{2GA}}dx $
+  $\begin{align*} U_{shearing}=U_{shearing,\space y}+U_{shearing, \space z}=\int_L{\frac{k F_y'^2}{2GA}}dx+\int_L{\frac{k F_z'^2}{2GA}}dx \end{align*}$
 </p>
 <p>
-  $ U_{axial}=U_{axial,\space x}=\int_L{\frac{ N_x'^2}{2EA}}dx $
+  $\begin{align*} U_{axial}=U_{axial,\space x}=\int_L{\frac{ N_x'^2}{2EA}}dx \end{align*}$
 </p>
 <p>
-  $ U_{torsion}=U_{torsion,\space x}=\int_L{\frac{ M_x'^2}{2GJ}}dx $
+  $\begin{align*} U_{torsion}=U_{torsion,\space x}=\int_L{\frac{ M_x'^2}{2GJ}}dx \end{align*}$
 </p>
 <p>
   where $M'$ and $F'$ represent bending moment and shear force inside hinge respectively, and $N'$ represents normal stress. According to Castigliano's second theorem, the deflection of angle and displacement of a flexible body at point $P$ can be obtained by deriving the strain energy from the external moment $M$ and force $F$,
 </p>
 <p>
-  $ \alpha_{i} = \frac{\partial U}{\partial M_i} , \Delta_i = \frac{\partial U}{\partial F_i} $
+  $\begin{align*} \alpha_{i} = \frac{\partial U}{\partial M_i} , \Delta_i = \frac{\partial U}{\partial F_i} \end{align*}$
 </p>
 <p>
-  <b>1. Angular compliance about the $z$-axis</b>
+  <b>1. Angular compliance about the $z$ axis</b>
 </p>
 <p>
   The angular displacement in $z$axis direction is mainly caused by the internal bending moment, $M_z'$. By deriving the bending strain energy $U_{bending}$ from the bending moment $M_z'$, the expression of $z$ axis angular displacement with respect to the bending moment $M_z$ can be obtained :
 </p>
 <p>
-  $\alpha_z=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot I_z(x)}}dx=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot [w \cdot h^3(x)/12]}}dx$
+  $\begin{align*} \alpha_z=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot I_z(x)}}dx=\int_{0}^{2a+l}{\frac{M_z'}{E \cdot [w \cdot h^3(x)/12]}}dx \end{align}$
 </p>
 <p>
   The internal bending moment of the material can be divided into two parts: the bending moment $M_z$ directly applied to the end of the hinge, and the equivalent bending moment $M_z^{e}$ caused by the force $F_y$.
@@ -178,7 +178,44 @@
   $ \begin{align*} \frac{\alpha_z}{M_z} &=-\frac{3}{2Ew}\int_{0}^{2a+l}{\frac{1}{y^3(x)}}dx \\ &=-\frac{3}{2Ew}[\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}{\frac{a\cos\theta}{(b\cos\theta-b-\frac{t}{2})^3}}d\theta+\int_a^{a+l}{(-\frac{2}{t})^3}dx] \\ &=\frac{12l}{Ewt^3}-\frac{3a}{Ew}\int_{0}^{\frac{\pi}{2}}{\frac{\cos\theta}{(b\cos\theta-b-\frac{t}{2})^3}}d\theta \\ &=\frac{12l}{Ewt^3}-\frac{3a}{Ew}\cdot N_1 \end{align*}$
 </p>
 <p>
-  To be continued...
+  where, the complex integral term, $N_1$, can be obtained by the algebra software, Mathematica, 
+</p>
+<p>
+  $ \begin{align*}  N_1&=\int_0^{\frac{\pi}{2}}{\frac{\cos\theta}{(b\cos\theta-b-\frac{t}{2})^3}}d\theta \\ &=-8[\frac{t^2+4bt+6b^2}{t^2(4b+t)^2(2b+t)}+\frac{6b(2b+t)\arctan{\sqrt{4b/t+1}}}{t^{5/2}(4b+t)^{5/2}}] \end{align*}$ 
+</p>
+<p>
+  For the compliance of angle displacement $\alpha_z$ on the end force $F_y$, the force is usually converted into the equivalent moment first, that is:
+</p>
+<p>
+  $\begin{align*} M_z^e=\begin{cases} (a\sin\theta+a)\cdot F_y & (-\frac{\pi}{2}<\theta< 0)\\ x\cdot F_y & (a \le x< a+l)\\ (a\sin\theta+a+l)\cdot F_y & (0 \le \theta < \frac{\pi}{2}) \end{cases} \end{align*}$
+</p>
+<p>
+  Substituting it into Eq.(23), we can get:
+</p>
+<p>
+  $\begin{align*} \frac{\alpha_z}{F_y}=-\frac{3}{2Ew}\cdot (\int_{-\pi/2}^{0}{\frac{(a\sin\theta+a)a\cos\theta}{(b\cos\theta-b-\frac{t}{2})^3}}d\theta+\int_a^{a+l}{\frac{x}{(-t/2)^3}}dx+\int_0^{\pi/2}{\frac{(a\sin\theta+a+l)a\cos\theta}{(b\cos\theta-b-\frac{t}{2})^3}}d\theta) \end{align*}$
+</p>
+<p>
+  which can be reduced to:
+</p>
+<p>
+  $\begin{align*} \frac{\alpha_z}{F_y}=\frac{6l(2a+l)}{Ewt^3}-\frac{3a(2a+l)}{2Ew}N_1 \end{align*}$
+</p>
+<p>
+  The definition of the complex integral term $N_1$ is given by Eq.(25). Comparing the results of Eq.(24) and Eq.(28), we propose the first inference:
+</p>
+<p>
+  $\bold{Conclusion \ 1:}$
+</p>
+
+<p>
+  <b>2. Angular compliance about the $y$ axis</b>
+</p>
+<p>
+  For the calculation of the flexural flexibility relation of the $y$ axis, it has the same method as above. By deriving the strain energy $U_{bending$ from the bending moment $M_y'$, the integral expression of the angle $\alpha_y$ with respect to the bending moment $M_y$ is obtained,
+</p>
+<p>
+  $\begin{align*} \alpha_y=\int_{0}^{2a+l}{\frac{M_y'}{E \cdot I_y(x)}}dx=\int_{0}^{2a+l}{\frac{M_y'}{E \cdot [w^3 \cdot h(x)/12]}}dx \end{align*}$
 </p>
 
 <!-- <p style="padding-left: 10px; padding-right: 10px;">
